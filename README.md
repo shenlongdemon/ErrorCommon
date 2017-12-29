@@ -141,3 +141,8 @@ brew doctor
 brew prune
 ```
 
+unable to unlink old 'Library/Homebrew/...'
+```
+sudo chown -R `whoami` /usr/local
+```
+
