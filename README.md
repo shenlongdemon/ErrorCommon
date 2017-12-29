@@ -115,3 +115,29 @@ Open Shake menu
 ```
 adb shell input keyevent 82
 ```
+
+Update npm lastest version 
+```
+npm install npm@latest -g
+```
+
+Remove npm, uninstall npm
+```
+npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\/npm$/ {print $NF}' | xargs npm -g rm
+```
+
+Install npm
+```
+brew install node
+brew install watchman
+```
+
+
+Remove node, uninstall node
+```
+sudo rm -rf  /usr/local/lib/node_modules/npm/
+brew uninstall node
+brew doctor
+brew prune
+```
+
