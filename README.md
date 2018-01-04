@@ -146,3 +146,10 @@ unable to unlink old 'Library/Homebrew/...'
 sudo chown -R `whoami` /usr/local
 ```
 
+Deploy website on MAC
+```
+Open terminal.
+Navigate to the folder (directory) containing the file you want to serve.
+php -S localhost:8080
+Go to http://localhost:8080 in the browser.
+```
