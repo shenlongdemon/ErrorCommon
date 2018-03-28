@@ -89,6 +89,11 @@ Error: EACCES: permission denied, access '/usr/local/lib/node_modules/react-nati
 sudo chown -R $(whoami) /usr/local/lib/node_modules/react-native-cli
 ```
 
+Error: Permission denied @ unlink_internal - /usr/local/etc/bash_completion.d/npm
+```
+sudo chown -R $USER /usr/local
+```
+
 
 Error: Building and installing the app on the device (cd android && ./gradlew installDebug)...
 Could not install the app on the device, read the error above for details.
@@ -153,3 +158,5 @@ Navigate to the folder (directory) containing the file you want to serve.
 php -S localhost:8080
 Go to http://localhost:8080 in the browser.
 ```
+
+
